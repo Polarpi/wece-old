@@ -1,0 +1,128 @@
+/* this is the css for join page */
+
+* {
+    color: #757575;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+* a, * a:visited, * a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* BODY INCLUDES MAINSUBSECTION AND ALL SUBSECTIONS */
+
+.body {
+    margin: 0;
+    text-align: center;
+    z-index: -1;
+    background-color: #f9f9f9;
+}
+
+/* SUBSECTIONS */
+
+.subsection {
+    margin: 0;
+    padding: 100px 0px 100px 0px;
+    transition: background-color 2s ease;
+}
+
+.subsection:hover {
+    background-color: #f9f9f9;
+}
+
+.subsection h1 {
+    color: #ffffff;
+    font-size: 360%;
+    line-height: 0%;
+    font-family: 'Comfortaa', "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+.subsection p {
+    color: #ffffff;
+}
+
+.subsection h6 {
+    color: #ffffff;
+    font-size: 150%;
+    margin-top: 50px;
+}
+
+.btn {
+    font-size: 120%;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 10px 40px;
+}
+
+.btn:hover {
+    color: #2eb6ad;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.btn[aria-disabled="true"] {
+    cursor: default;
+    color: #aaaaaa;
+    border: 2px solid #aaaaaa;
+}
+
+.btn[aria-disabled="true"]:hover {
+    cursor: default;
+    border: 2px solid #aaaaaa;
+    background-color: transparent;
+}
+
+/* ----------------------------------------
+--- FOR DIFFERENT SCREEN RESOLUTIONS ---
+---------------------------------------- */
+
+@media screen and (max-width: 250px) {
+    .subsection h1 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #mainsubsection span {
+        font-size: 200%;
+    }
+    .subsection h1 {
+        font-size: 100%;
+    }
+    .subsection h6 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subsection img {
+        width: 50vw;
+    }
+    .subsection h1 {
+        font-size: 200%;
+    }
+    .subsection h6 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .subsection {
+        padding: 100px 50px 100px 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .subsection {
+        padding: 100px 500px 100px 500px;
+    }
+}
+
+.display {
+    background-color: #2eb6ad;
+    padding: 100px 0px 100px 0px;
+}
